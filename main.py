@@ -61,7 +61,8 @@ keyCodes = [
 user32 = ctypes.WinDLL("user32", use_last_error=True)
 
 root = tk.Tk()
-
+root.title("Sturdy Clicker")
+root.iconbitmap("mouse.ico")
 
 class Clicker(threading.Thread):
     def __init__(self, delay):
